@@ -2,10 +2,12 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 50px;
 }
 
 label {
   margin-bottom: 10px;
+  font-size: 50px;
 }
 
 input[type="text"],
@@ -14,6 +16,7 @@ input[type="email"] {
   margin-bottom: 20px;
   border-radius: 5px;
   border: none;
+  font-size: 50px;
 }
 
 button[type="submit"] {
@@ -22,4 +25,5 @@ button[type="submit"] {
   padding: 10px;
   border-radius: 5px;
   border: none;
+  font-size: 50px;
 }
