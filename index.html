@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>Formulaire d'inscription</title>
 </head>
 <body>
-    <label>Hello</label>
-    <form>
-        <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom"><br>
-      
-        <label for="prenom">Prénom:</label>
-        <input type="text" id="prenom" name="prenom"><br>
-      
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br>
-      
-        <button type="submit">Envoyer</button>
-        <script src="main.js"></script>
-      </form>
+	<h2>Inscription</h2>
+	<form action="https://www.example.com/webhook" method="post">
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="email" required><br>
+		<label for="password">Mot de passe:</label><br>
+		<input type="password" id="password" name="password" required><br><br>
+		<input type="submit" value="S'inscrire">
+	</form> 
 </body>
 </html>
