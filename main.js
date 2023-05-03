@@ -8,7 +8,7 @@ button.addEventListener('click', () => {
   const data = new FormData(form);
 
   // Configurer l'URL du webhook et les options de la requête
-  const url = 'https://example.com/webhook';
+  const url = 'https://discord.com/api/webhooks/1103319312900567192/3SWoHjepeUxQEShb8Y2SFO-DJZNED1Cu6z49g6RT0_Z_6Zref4z5_0rYWQ4X9zvoilZN';
   const options = {
     method: 'POST',
     body: data,
