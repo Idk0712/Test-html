@@ -1,26 +1,25 @@
-#Counting{
-    display: block;
-    text-align: center;
-    font-size: 100px;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#decreasebut{
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    background-color: red;
-    border-color: red;
+
+label {
+  margin-bottom: 10px;
 }
-#resetbut{
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    background-color: white;
-    border-color: white;
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
 }
-#increasebut{
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    background-color: green;
-    border-color: green;
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
