@@ -1,0 +1,26 @@
+#Counting{
+    display: block;
+    text-align: center;
+    font-size: 100px;
+}
+#decreasebut{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    background-color: red;
+    border-color: red;
+}
+#resetbut{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    background-color: white;
+    border-color: white;
+}
+#increasebut{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    background-color: green;
+    border-color: green;
+}
