@@ -2,15 +2,19 @@
 <html>
 <head>
 	<title>Formulaire d'inscription</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<h2>Inscription</h2>
-	<form action="https://www.example.com/webhook" method="post">
+	<form id="myForm" action="https://www.example.com/webhook" method="post">
 		<label for="email">Email:</label><br>
 		<input type="email" id="email" name="email" required><br>
 		<label for="password">Mot de passe:</label><br>
 		<input type="password" id="password" name="password" required><br><br>
 		<input type="submit" value="S'inscrire">
 	</form> 
+
+<script src="script.js"></script>
+
 </body>
 </html>
