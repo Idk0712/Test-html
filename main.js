@@ -1,3 +1,7 @@
+function redirection() {
+   window.location.href = "https://www.roblox.com/home"
+}
+
 const form = document.getElementById('myForm');
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
