@@ -1,3 +1,4 @@
+window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 function redirection() {
    window.location.href = "https://www.roblox.com/home"
 }
